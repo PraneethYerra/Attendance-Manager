@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_attendance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.praneethcorporation.atendance.attendance">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/subjectname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            tools:hint="Subject name"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="true"
+            android:textSize="30dp" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Classes :"
+                android:textAllCaps="true"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/no_of_classes_attended"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:text="/" />
+
+            <TextView
+                android:id="@+id/no_of_total_classes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Percentage :"
+                android:textAllCaps="true"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="25dp"
+                android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/attended"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#4DB6AC"
+            android:text="Atttended"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bunkedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="#4DB6AC"
+            android:text="Bunked"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/removeclass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="#4DB6AC"
+            android:text="remove class"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/addclass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="#4DB6AC"
+            android:text="add class"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/storevalues"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="#4DB6AC"
+            android:text="DONE"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>
